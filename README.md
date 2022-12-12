@@ -1,5 +1,6 @@
 # Next.js 뿌시기 🤓
-> 정말 쉽다! next! (level~ 👯‍♀️)
+> React + Express.js + react-router-dom ★ ~ Server Side Rendering ~ ★ <br/>
+정말 쉽다! next! (level~ 👯‍♀️)
 ## 개발 환경 세팅 📝
 -  npx create-next-app@latest .
 - npm install next@12 (현재는 13 버전까지 나왔으므로, 12 버전으로 깔자.)
