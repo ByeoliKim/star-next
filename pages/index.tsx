@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState } from "react";
+import MainVisual from '../components/MainVisual';
 import NavBar from '../components/NavBar';
 
 export default function Main () {
@@ -7,6 +8,7 @@ export default function Main () {
     return (
         <>
         <NavBar />
+        <MainVisual />
         <div>
             헬로 넥스트~ {counter}
         </div>
