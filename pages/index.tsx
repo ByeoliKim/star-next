@@ -7,7 +7,6 @@ export default function Main () {
     const [counter, setCounter] = useState(0);
     return (
         <>
-        <NavBar />
         <MainVisual />
         <div>
             헬로 넥스트~ {counter}
