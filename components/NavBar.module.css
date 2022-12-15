@@ -1,0 +1,2 @@
+.nav { display:flex; justify-content:center; align-items:center; background:tomato; box-sizing:border-box; }
+.active { color:pink; }
