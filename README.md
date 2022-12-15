@@ -7,7 +7,6 @@
 - `npm run dev` : 개발 환경 실행
 - `npm run build` : .next 라는 곳에 빌드 파일 생성
 - `npm run start` : 배포된 파일 실행
-<<<<<<< HEAD
 ## 장점
 - 검색 엔진 최적화 (SEO)
 - 모든 파일에 react를 import 할 필요가 없다.
