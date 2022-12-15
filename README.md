@@ -1,11 +1,13 @@
 # Next.js 뿌시기 🤓
-> 정말 쉽다! next! (level~ 👯‍♀️)
+> React + Express.js + react-router-dom ★ ~ Server Side Rendering ~ ★ <br/>
+정말 쉽다! next! (level~ 👯‍♀️)
 ## 개발 환경 세팅 📝
 -  npx create-next-app@latest .
 - npm install next@12 (현재는 13 버전까지 나왔으므로, 12 버전으로 깔자.)
 - `npm run dev` : 개발 환경 실행
 - `npm run build` : .next 라는 곳에 빌드 파일 생성
 - `npm run start` : 배포된 파일 실행
+<<<<<<< HEAD
 ## 장점
 - 검색 엔진 최적화 (SEO)
 - 모든 파일에 react를 import 할 필요가 없다.
@@ -27,3 +29,5 @@
 ## Styles JSX 📝
 - NextJS 고유의 방법.
 - 어플리케이션에 styles 를 추가하는 또 다른 방식이다.
+=======
+>>>>>>> 499b8ac3fb38cea9f5f15fe1018f935663b94b5a
