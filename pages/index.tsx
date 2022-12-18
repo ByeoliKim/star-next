@@ -1,18 +1,11 @@
-import Head from 'next/head'
-import { useState } from "react";
 import MainVisual from '../components/MainVisual';
-import NavBar from '../components/NavBar';
+import Seo from '../components/Seo';
 
 export default function Main () {
-    const [counter, setCounter] = useState(0);
     return (
         <>
-        <MainVisual />
-        <div>
-            헬로 넥스트~ {counter}
-        </div>
-        <button onClick={() => setCounter((prev) => prev+1)}>+</button>
+            <Seo title="Home" />
+            <MainVisual />
         </>
-
-    )
+    );
 }
