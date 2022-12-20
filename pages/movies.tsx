@@ -12,13 +12,7 @@ export default function Movies({ results }) {
     const router = useRouter();
     const onClick = (id, title) => {
         router.push(
-            {
-                pathname: `/movies/${id}`,
-                query: {
-                    title,
-                },
-            },
-            `/movies/${id}`
+            `/movies/${title}/${id}`
         );
     };
     return (
@@ -51,13 +45,7 @@ export default function Movies({ results }) {
                     <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="포스터 이미지" />
                     <h3>
                         <Link
-                            href={{
-                                pathname: `/movies/${movie.id}`,
-                                query: {
-                                    title: movie.original_title,
-                                },
-                            }}
-                            as={`/movies/${movie.id}`}
+                            href={`/movies/${movie.original_title}/${movie.id}`}
                         >
                             <a>{movie?.original_title}</a>
                         </Link>
