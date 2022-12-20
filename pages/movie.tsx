@@ -6,20 +6,7 @@ type Items = {
     original_title: string;
 }
 
-export default function Movie() {
-    const [movies, setMovies] = useState();
-    useEffect(() => {
-        (async () => {
-            const { results } = await (
-                await fetch(
-                    `/api/movie`
-                )
-            ).json();
-            setMovies(results);
-            console.log(results);
-        })();
-    },[]);
-
+export default function Movie({ results }) {
     return (
         <>
             <Seo title="Good" />
@@ -27,9 +14,9 @@ export default function Movie() {
                 헬로 넥스트~ {counter}
             </div>
             <button onClick={() => setCounter((prev) => prev+1)}>+</button> */}
-            {!movies && <h4>로딩 중</h4>}
+            {/* {!movies && <h4>로딩 중</h4>} */}
             <ul>
-                {movies?.map((movie) => (
+                {results?.map((movie) => (
                     <li key={movie.id}>
                         <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="포스터 이미지" />
                         <h3>{movie?.original_title}</h3>
@@ -48,4 +35,26 @@ export default function Movie() {
             </style>
         </>
     );
+}
+
+export async function getServerSideProps() {
+    //오직 Sever Side 에서만 실핼되는 코드
+    //API Load 가 느리다면 유저가 아무것도 보지 못한 채로 오래 기다려야 한다는 단점
+    // const [movies, setMovies] = useState();
+    // useEffect(() => {
+    //     (async () => {
+            const { results } = await (
+                await fetch(
+                    `http://localhost:3000/api/movie`
+                )
+            ).json();
+    //         setMovies(results);
+    //         console.log(results);
+    //     })();
+    // },[]);
+    return {
+        props: {
+            results,
+        }
+    }
 }
