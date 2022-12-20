@@ -19,8 +19,8 @@ export default function NavBar () {
                     <Link href="/portfoilo">
                         <a className={router.pathname === "/portfoilo" ? "active" : ""}>Portfoilo</a>
                     </Link>
-                    <Link href="/movie">
-                        <a className={router.pathname === "/movie" ? "active" : ""}>Movie</a>
+                    <Link href="/movies">
+                        <a className={router.pathname === "/movies" ? "active" : ""}>Movies</a>
                     </Link>
                 </nav>
             </div>

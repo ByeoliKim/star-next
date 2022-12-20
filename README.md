@@ -35,9 +35,16 @@
 ## Custom App 📝
 - 전역 styles 를 추가하고 싶을 때는 styls jsx 에 `global` prop 을 추가해 준다.
 - styles/global.css 는 App 컴포넌트에서는 적용이 불가능하고, 커스텀된 페이지나 컴포넌트 내에서만 import 해서 사용할 수 있다.
-## Server Side Rendering
+## Server Side Rendering 📝
 - export function getServerSideProps() {}
 - 요청할 때마다 HTML 이 생성되기 때문에 데이터가 계속 업데이트 된다.
 - 데이터를 새로 받아와 페이지가 렌더링 된다.
 - 해당 페이지 사용자가 요청 시, getServerSideProps 를 선 실행 후, front 가 server 에 직접 요청하여 데이터를 받아와서 page 컴포넌트에 데이터를 props 로 전달하여 렌더링 한다.
 - getServerSideProps 는 데이터가 계속 바뀌는 페이지에 사용하자.
+## Dynamic Routes! 📝
+- /movies/all 경로를 만들고 싶다?
+> movies 폴더 생성 후 > all 컴포넌트 파일을 추가해 주면 된다. <br/>
+> movies 폴더 안에 있는 파일들이 아름답게 맵핑될 것~ <br/>
+- 페이지가 하나라면 폴더를 만들어 줄 필요는 없다.
+- URL 에 변수를 넣는 방법
+> 대괄호 안에 변수명을 적어 파일을 생성한다. (ex. [movieID].tsx)
