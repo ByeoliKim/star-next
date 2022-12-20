@@ -36,7 +36,7 @@
 - 전역 styles 를 추가하고 싶을 때는 styls jsx 에 `global` prop 을 추가해 준다.
 - styles/global.css 는 App 컴포넌트에서는 적용이 불가능하고, 커스텀된 페이지나 컴포넌트 내에서만 import 해서 사용할 수 있다.
 ## Server Side Rendering
-- export async function getServerSideProps() {}
+- export function getServerSideProps() {}
 - 요청할 때마다 HTML 이 생성되기 때문에 데이터가 계속 업데이트 된다.
 - 데이터를 새로 받아와 페이지가 렌더링 된다.
 - 해당 페이지 사용자가 요청 시, getServerSideProps 를 선 실행 후, front 가 server 에 직접 요청하여 데이터를 받아와서 page 컴포넌트에 데이터를 props 로 전달하여 렌더링 한다.
