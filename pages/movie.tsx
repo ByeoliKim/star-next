@@ -38,7 +38,7 @@ export default function Movie({ results }) {
 }
 
 export async function getServerSideProps() {
-    //오직 Sever Side 에서만 실핼되는 코드
+    //오직 Sever Side 에서만 실행되는 코드
     //API Load 가 느리다면 유저가 아무것도 보지 못한 채로 오래 기다려야 한다는 단점
     // const [movies, setMovies] = useState();
     // useEffect(() => {
