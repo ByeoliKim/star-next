@@ -8,12 +8,11 @@ type Items = {
 
 export default function Movie() {
     const [movies, setMovies] = useState();
-    const API_KEY = "189978b586e381358bafab5d8d93fd22";
     useEffect(() => {
         (async () => {
             const { results } = await (
                 await fetch(
-                    `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
+                    `/api/movie`
                 )
             ).json();
             setMovies(results);
